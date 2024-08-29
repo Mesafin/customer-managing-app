@@ -16,7 +16,6 @@ app.get("/", (req, res) =>
   )
 );
 
-
 // Database connection
 // const connection = mysql.createConnection({
 //   user: "customerManagement",
@@ -30,7 +29,7 @@ const connection = mysql.createConnection({
   password: process.env.PASSWORD,
   host: process.env.HOST,
   database: process.env.DATABASE,
-  port: process.env.PORT
+  // port: process.env.PORT
 });
 
 
