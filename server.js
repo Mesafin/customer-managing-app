@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
+require('dotenv').config();
 
 const app = express();
 
@@ -15,13 +16,21 @@ app.get("/", (req, res) =>
   )
 );
 
+
 // Database connection
+// const connection = mysql.createConnection({
+//   user: "customerManagement",
+//   password: "customer@management1",
+//   host: "localhost",
+//   database: "customerManagement",
+//   port: 3308
+// });
 const connection = mysql.createConnection({
-  user: "customerManagement",
-  password: "customer@management1",
-  host: "localhost",
-  database: "customerManagement",
-  port: 3308
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  port: process.env.PORT
 });
 
 
