@@ -56,9 +56,13 @@ document.getElementById("insert-customer-form").addEventListener("submit", funct
     })
     .then((response) => {
 		console.log(response)
-        showNotification("Customer info added successfully!", "success");
-		fetchCustomers();
-        displayCustomers(); 
+        if(response.ok){
+            showNotification("Customer info added successfully!", "success");
+            fetchCustomers();
+            displayCustomers(); 
+        }else{
+            showNotification( "Failed to add customer info.", "danger");
+        }
     })
     .catch((error) => {
         showNotification(error.message || "Failed to add customer info.", "danger");

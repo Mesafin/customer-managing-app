@@ -16,3 +16,13 @@ body{
     opacity: 1; 
     transform: translateY(0); 
 }
+
+@media (max-width: 768px) {
+    .min-width{
+        width: 100% !important;
+    }
+    .min-width form, .min-width h3{
+        margin: 20px auto;
+        width: 90%;
+    }
+  }

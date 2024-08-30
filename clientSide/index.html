@@ -24,7 +24,7 @@
       <!-- buttons -->
       <div class="d-flex justify-content-between my-5">
         <!-- home button -->
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-sm btn-md-md btn-secondary">
           <a
             style="color: azure; text-decoration: none"
             href="./index.html"
@@ -36,7 +36,7 @@
         <!-- customer list button -->
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-sm btn-md-md btn-primary"
           onclick="displayCustomers()"
         >
           Customers List
@@ -45,7 +45,7 @@
         <!-- register button -->
         <button
           type="button"
-          class="btn btn-success"
+          class="btn btn-sm btn-md-md btn-success"
           onclick="displayForm('new-form')"
         >
           Register
@@ -68,7 +68,7 @@
     <!-- customer table -->
     <section
       id="customer-table"
-      class="mx-auto my-3 w-75"
+      class="mx-auto my-3 w-75 min-width"
       style="display: none"
     >
       <h3>Customer List</h3>
@@ -90,7 +90,7 @@
     </section>
 
     <!-- customer register form -->
-    <section id="new-form" class="mx-auto my-3 w-75" style="display: none">
+    <section id="new-form" class="mx-auto my-3 w-75 min-width" style="display: none">
       <h3>Insert Customer Info</h3>
       <form id="insert-customer-form" style="zoom: 150%">
         <label for="name">Name:</label><br />
@@ -102,12 +102,12 @@
         <label for="company">Company:</label><br />
         <input type="text" name="company" /><br /><br />
 
-        <button type="submit" class="btn btn-dark btn-sm">Submit Info</button>
+        <button type="submit" class="btn btn-sm btn-md-md btn-dark btn-sm">Submit Info</button>
       </form>
     </section>
 
     <!-- customer edit form -->
-    <section id="edit-form" class="mx-auto my-3 w-75" style="display: none">
+    <section id="edit-form" class="mx-auto my-3 w-75 min-width" style="display: none">
       <h3>Edit Customer Info</h3>
       <form id="edit-form" style="zoom: 150%">
         <input type="hidden" name="id" />
@@ -121,7 +121,7 @@
         <label for="editCompany">Company:</label><br />
         <input type="text" name="editCompany" /><br /><br />
 
-        <button type="submit" class="btn btn-dark btn-sm">Update</button>
+        <button type="submit" class="btn btn-dark btn-sm btn-sm btn-md-md">Update</button>
       </form>
     </section>
 
