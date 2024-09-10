@@ -15,6 +15,11 @@ app.get("/", (req, res) =>
     '<body style="background-color: bisque;" ><h3>The server is running ...</h3></body>'
   )
 );
+app.get("/test", (req, res) =>
+  res.send(
+    '<body style="background-color: bisque;" ><h3>test page</h3></body>'
+  )
+);
 
 // Database connection
 // const connection = mysql.createConnection({
